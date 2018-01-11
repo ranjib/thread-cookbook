@@ -27,6 +27,7 @@ end
 class Chef
   class Provider
     class ThreadJoin < Chef::Provider
+      provides :thread_join
 
       def whyrun_supported?
         true

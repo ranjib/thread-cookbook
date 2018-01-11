@@ -1,6 +1,10 @@
 class Chef
   class Provider
     class Thread < Chef::Provider
+      provides :thread_test
+      include Chef::DSL::Recipe 
+      include Chef::DSL::Core 
+      include Chef::DSL::Universal
 
       def whyrun_supported?
         true
